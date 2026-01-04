@@ -1,4 +1,4 @@
-<nav class="bg-gradient-to-r from-blue-600 to-blue-800 shadow-lg">
+<nav class="bg-gradient-to-r from-gray-700 to-gray-950 shadow-lg">
     <div class="container mx-auto px-4">
         <!-- Desktop Navigation -->
         <div class="hidden md:flex justify-between items-center h-16">
@@ -38,13 +38,15 @@
                     <i class="fas fa-sign-out-alt mr-1"></i> Logout
                 </button>
                 } @else {
-                <a routerLink="/login" class="text-white hover:text-blue-200 transition-colors duration-200">
-                    <i class="fas fa-sign-in-alt mr-1"></i> Login
-                </a>
+                <button routerLink="/login" class="group relative inline-flex h-10 items-center justify-center rounded-md bg-white px-4 font-sm text-blue-700"><span>
+                    <i class="fas fa-sign-in-alt mr-1"> </i> Login </span><div class="relative ml-1 h-4 w-4 overflow-hidden"><div class="absolute transition-all duration-200 group-hover:-translate-y-5 group-hover:translate-x-4"><svg width="10" height="10" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"><path d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg><svg width="10" height="10" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 -translate-x-4"><path d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd">
+                    
+                </path></svg></div></div></button>
                 <a routerLink="/register"
                     class="bg-white hover:bg-gray-100 text-blue-700 px-4 py-2 rounded-md transition-colors duration-200">
                     <i class="fas fa-user-plus mr-1"></i> Sign Up
                 </a>
+                
                 }
             </div>
         </div>
